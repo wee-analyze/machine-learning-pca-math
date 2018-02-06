@@ -27,7 +27,7 @@ for running algorithms.
 
 reduced dataset = scaled data x selected principal components
 
-* 6. Additionally, it is possible to implement a vector multiplication on the reduced dataset that will return 
+#6. Additionally, it is possible to implement a vector multiplication on the reduced dataset that will return 
 a dataset very similar to the original standardized dataset.
 
 expansion = reduced data x (selected principal component matrix)'
