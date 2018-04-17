@@ -11,19 +11,19 @@ running machine learning algorithms.
 This repository focuses on using vector multiplication to show the mathematics behind PCA instead of just using 
 the PCA function in order to see "under the hood" of the analysis.
 
-Steps to calculating PCA:
-1. standardize data
-2. Make covariance matrix of data 
+    Steps to calculating PCA:
+    1. standardize data
+    2. Make covariance matrix of data 
 
-covariance = (1 / # of data samples) * X' * X
+    covariance = (1 / # of data samples) * X' * X
 
-3. Find eigenvectors and singular value of covariance matrix using Singular Value Decomposition.
-4. Determine minimum # of principal components which retains at least 95% variance
-- using the singular values you can calculate k by adding the values starting from index 1 to a certain index
-and diving that by the total sum of the all singular values so that it is >= 95%. Keep the number of principal components 
-from column index 1:k.
-5. Project standardized dataset examples onto the kept principal components. The dataset is now reduced and can be used
-for running algorithms.
+    3. Find eigenvectors and singular value of covariance matrix using Singular Value Decomposition.
+    4. Determine minimum # of principal components which retains at least 95% variance
+    - using the singular values you can calculate k by adding the values starting from index 1 to a certain index
+    and diving that by the total sum of the all singular values so that it is >= 95%. Keep the number of principal components 
+    from column index 1:k.
+    5. Project standardized dataset examples onto the kept principal components. The dataset is now reduced and can be used
+    for running algorithms.
 
 reduced dataset = scaled data x selected principal components
 
@@ -32,7 +32,7 @@ a dataset very similar to the original standardized dataset.
 
 expansion = reduced data x (selected principal component matrix)'
 
-##################################################
+## Data
 
 Included in this repository in a wine quality dataset from https://archive.ics.uci.edu/ml/datasets/wine+quality. This dataset has
 12 features and was reduced to 9 with 95% retained variance. If I had dataset with 1,000,000 features, PCA could possibly 
