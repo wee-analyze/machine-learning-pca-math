@@ -20,10 +20,10 @@ the PCA function in order to see "under the hood" of the analysis.
     3. Find eigenvectors and singular value of covariance matrix using Singular Value Decomposition.
     4. Determine minimum # of principal components which retains at least 95% variance
     - using the singular values you can calculate k by adding the values starting from index 1 to a certain index
-    and diving that by the total sum of the all singular values so that it is >= 95%. Keep the number of principal components 
-    from column index 1:k.
-    5. Project standardized dataset examples onto the kept principal components. The dataset is now reduced and can be used
-    for running algorithms.
+    and diving that by the total sum of the all singular values so that it is >= 95%. Keep the number of 
+    principal components from column index 1:k.
+    5. Project standardized dataset examples onto the kept principal components. The dataset is now reduced and can 
+    be used for running algorithms.
 
 reduced dataset = scaled data x selected principal components
 
